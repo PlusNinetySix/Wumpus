@@ -7,7 +7,7 @@ You hear water dripping from the ceiling
 You trip on some rocks and nearly fall over.
 4 3 11 8
 There are some shoes here. Too bad they're not your size.
-5 4 7	15
+5 4 7 15
 Many stalactites are on the ceiling. You duck down to avoid them.
 6 5 1 14
 You find an empty lantern.
