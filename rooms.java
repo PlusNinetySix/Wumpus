@@ -8,19 +8,32 @@ public class rooms
 {
 	int roomNum;
 	String desc;
-	rooms[] r;
+	rooms[] Adj;
 	
 	public rooms(int roomNum)
 	{
 		this.roomNum = roomNum;
 	}
-	public void setAdj(rooms[] r)
+	public void setAdj(rooms[] Adj)
 	{
-		this.r = r;
+		this.Adj = Adj;
 	}
 	public void setDesc(String desc)
 	{
 		this.desc = desc;
+	}
+	public boolean isAdj(rooms r)
+	{
+		boolean isAdj = false;
+		
+		for (int i=0;i<Adj.length;i++)
+		{
+			if(r==Adj[i])
+			{
+				isAdj=true;
+			}
+		}
+		return isAdj;
 	}
 	public String toString()
 	{
