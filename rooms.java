@@ -3,10 +3,12 @@
  * @author JGore & Hayden N. Walters
  *
  */
-import java.util.*;
 public class rooms 
 {
 	int roomNum;
+	boolean wumpus=false;
+	boolean spider=false;
+	boolean pit=false;
 	String desc;
 	rooms[] Adj;
 	
@@ -35,8 +37,32 @@ public class rooms
 		}
 		return isAdj;
 	}
+	public boolean hasWumpus()
+	{
+		return wumpus;
+	}
+	public boolean hasSpider()
+	{
+		return spider;
+	}
+	public boolean hasPit()
+	{
+		return pit;
+	}
+	public void setWumpus()
+	{
+		wumpus=true;
+	}
+	public void setSpider()
+	{
+		spider=true;
+	}
+	public void setPit()
+	{
+		pit=true;
+	}
 	public String toString()
 	{
-		return roomNum + desc;
+		return desc + "\nRooms you can move to:" + " " + Adj[0].roomNum+ " " + Adj[1].roomNum + " " + Adj[2].roomNum;
 	}
 }
